@@ -38,6 +38,16 @@ The GUI describes which action is to be executed with which role.
 
 ![Workflow](assets/GUI_5.png)
 
+#### Architecture
+[UML diagrams](UML.md)  
+
+#### Libraries
+[truffle-hdwallet-provider](https://github.com/trufflesuite/truffle-hdwallet-provider) - For Rinkeby deployment  
+[jQuery](https://jquery.com/)
+
+#### Deployed on Rinkeby test network
+Contract: [0xdd61e888bc86a3462f3ac5d67dae76d3f89a267e](https://rinkeby.etherscan.io/address/0xdd61e888bc86a3462f3ac5d67dae76d3f89a267e)  
+TX-Address: [0x659b28a7c8f4ed1b83e56c446ce6ea6613ffb2589e8bf5c05d3bb5441fa4a18a](https://rinkeby.etherscan.io/tx/0x659b28a7c8f4ed1b83e56c446ce6ea6613ffb2589e8bf5c05d3bb5441fa4a18a)
 
 ## Getting Started
 
@@ -123,6 +133,5 @@ to make the web faster, safer, and more open.
 * [Truffle Framework](http://truffleframework.com/) - Truffle is the most popular development framework for Ethereum with a mission to make your life a whole lot easier.
 
 
-# Deployed on Rinkeby test network
-This Contract is deployed on Rinkeby: [0xdd61e888bc86a3462f3ac5d67dae76d3f89a267e](https://rinkeby.etherscan.io/address/0xdd61e888bc86a3462f3ac5d67dae76d3f89a267e)
-A full example 
+
+
