@@ -1,4 +1,4 @@
-# Supply chain & data auditing
+# Blockchain Supply Chain DApp Solution
 
 #### General Information
 This repository contains an Ethereum DApp that simulates a supply chain from software requirements through implementation, review, testing, invoicing and paying.  
