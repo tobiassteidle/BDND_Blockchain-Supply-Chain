@@ -1,5 +1,5 @@
 # Architect and building a Blockchain Supply Chain DApp Solution
-This project contains so far only the UML diagrams to describe the architecture of the planned blockchain application.  
+This UML diagrams describe the architecture of the blockchain application.  
 
 The design of my supply chain is about requesting a new feature request for a software from its development, review and testing to payment.
 
