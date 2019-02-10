@@ -45,6 +45,12 @@ The GUI describes which action is to be executed with which role.
 [truffle-hdwallet-provider](https://github.com/trufflesuite/truffle-hdwallet-provider) - For Rinkeby deployment  
 [jQuery](https://jquery.com/)
 
+#### Versions
+Nodejs v8.11.4  
+Truffle v4.1.15 (core: 4.1.15)  
+Solidity v0.4.25 (solc-js)
+
+
 #### Deployed on Rinkeby test network
 Contract: [0xdd61e888bc86a3462f3ac5d67dae76d3f89a267e](https://rinkeby.etherscan.io/address/0xdd61e888bc86a3462f3ac5d67dae76d3f89a267e)  
 TX-Address: [0x659b28a7c8f4ed1b83e56c446ce6ea6613ffb2589e8bf5c05d3bb5441fa4a18a](https://rinkeby.etherscan.io/tx/0x659b28a7c8f4ed1b83e56c446ce6ea6613ffb2589e8bf5c05d3bb5441fa4a18a)
