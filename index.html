@@ -4,90 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fair Trade Coffee</title>
+    <title>Software Feature Request DAPP</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1 style="text-align: center;">Fair Trade Coffee</h1>
+        <h1 style="text-align: center;">Request New Software Feature</h1>
         <hr>
-        <p style="text-align: center;">Prove the authenticity of coffee using the Ethereum blockchain.</p>
+        <p style="text-align: center;">Prove the authenticity of a software feature request process using the Ethereum blockchain.</p>
     </div>
 
-    <div id="ftc-harvest">
-        <h2>Product Overview</h2>
+
+    <div id="ftc-software">
+        <h2>Feature Overview <small>Fetch Features from Blockchain</small></h2>
         <div class="form-group">
-            SKU
+            Feature Id
             <br>
-            <input class="input-field" type="number" id="sku" name="sku" value=1><br>
-            UPC
+            <input type="number" id="feature_id" name="feature_id" value="1"><button class="row-button fetch-button" id="btn_fetch" type="button" data-id="1">Fetch</button><br>
+
+            Topic
             <br>
-            <input type="number" id="upc" name="upc" value=1><br>
-            Current Owner ID
+            <input type="text" id="fetch_topic" name="fetch_topic" value=""><br>
+
+            Description
             <br>
-            <input type="text" id="ownerID" name="ownerID" value="0x963865f57804b38459dd4b2da2f760211a200438" size="50"><br>
-            <div class=button-div>
-                <button class="btn-fetchOne" id="button" type="button" data-id="9">Fetch Data 1</button>
-                <button class="btn-fetchTwo" id="button" type="button" data-id="10">Fetch Data 2</button>
-            </div>
+            <input type="text" id="fetch_description" name="fetch_description" value=""><br>
+
+            Price
+            <br>
+            <input type="number" id="fetch_price" name="fetch_price" value=""> ETH<br>
+
+            State
+            <br>
+            <input type="text" id="fetch_state" name="fetch_state" value=""><br>
+
+            Customer
+            <br>
+            <input type="text" id="fetch_customer_id" name="fetch_customer_id" value=""><br>
+
+            Backoffice
+            <br>
+            <input type="text" id="fetch_backoffice_id" name="fetch_backoffice_id" value=""><br>
+
+            Developer
+            <br>
+            <input type="text" id="fetch_developer_id" name="fetch_developer_id" value=""><br>
+
+            Reviewer
+            <br>
+            <input type="text" id="fetch_reviewer_id" name="fetch_reviewer_id" value=""><br>
+
+            Tester
+            <br>
+            <input type="text" id="fetch_tester_id" name="fetch_tester_id" value=""><br>
+        </div>
+
+        <h2>Set Contract Roles</h2>
+        <div class="form-group">
+            Customer
+            <br>
+            <input type="text" id="customerId" name="customerId" value="0x018c2dabef4904ecbd7118350a0c54dbeae3549a"><button class="row-button" id="btn_add_customer" type="button" data-id="2">Add</button><br />
+
+            Backoffice
+            <br>
+            <input type="text" id="backofficeId" name="backofficeId" value="0xce5144391b4ab80668965f2cc4f2cc102380ef0a"><button class="row-button" id="btn_add_backoffice" type="button" data-id="3">Add</button><br />
+
+            Developer
+            <br>
+            <input type="text" id="developerId" name="developerId" value="0x460c31107dd048e34971e57da2f99f659add4f02"><button class="row-button" id="btn_add_developer" type="button" data-id="4">Add</button><br />
+
+            Reviewer
+            <br>
+            <input type="text" id="reviewerId" name="reviewerId" value="0xd37b7b8c62be2fdde8daa9816483aebdbd356088"><button class="row-button" id="btn_add_reviewer" type="button" data-id="5">Add</button><br />
+
+            Tester
+            <br>
+            <input type="text" id="testerId" name="testerId" value="0x27f184bdc0e7a931b507ddd689d76dba10514bcb"><button class="row-button" id="btn_add_tester" type="button" data-id="6">Add</button><br />
         </div>
         <div class=form-break></div>
-        <h2>Farm Details</h2>
+
+        <h2>Request new Software Feature <small>Role "Customer" required</small></h2>
         <div class="form-group">
-            Farmer ID
+            Topic
             <br>
-            <input type="text" id="originFarmerID" name="originFarmerID" value="0x99c289eb2aacec289631a5ddf62cf27a63d4494f"
-                size="50"><br>
-            Farm Name
+            <input type="text" id="topic" name="topic" value="Create a Supply Chain"><br>
+
+            Description
             <br>
-            <input type="text" id="originFarmName" name="originFarmName" value="John Doe"><br>
-            Farm Information
+            <input type="text" id="description" name="description" value="Implement a Smart Contract an meet specifications."><br>
+
             <br>
-            <input type="text" id="originFarmInformation" name="originFarmInformation" value="Yarra Valley"><br>
-            Farm Latitude
+            <button id="btn_request_feature" type="button" data-id="7">Request new Feature</button>
+
             <br>
-            <input type="text" id="originFarmLatitude" name="originFarmLatitude" value="-38.239770"><br>
-            Farm Longitude
-            <br>
-            <input type="text" id="originFarmLongitude" name="originFarmLongitude" value="144.341490"><br>
-            <br>
-            <button class="btn-harvest" id="button" type="button" data-id="1">Harvest</button>
-            <button class="btn-process" id="button" type="button" data-id="2">Process</button>
-            <button class="btn-pack" id="button" type="button" data-id="3">Pack</button>
-            <button class="btn-forsale" id="button" type="button" data-id="4">ForSale</button>
+            <h4><div id="new_feature_id"></div></h4>
         </div>
-        <div class=form-break></div>
-        <h2>Product Details</h2>
+
+        <h2>Send offer to Customer <small>Role "Backoffice" required</small></h2>
         <div class="form-group">
-            Product Notes
+            Feature Id
             <br>
-            <input type="text" id="productNotes" name="productNotes" value="Best beans for Espresso" size="60"><br>
-            Product Price
+            <input type="number" id="offer_feature_id" name="offer_feature_id" value="1"><br>
+
+            Price
             <br>
-            <input type="number" id="productPrice" name="productPrice" value=1>ETH<br>
-            Distributor ID
+            <input type="number" id="price" name="price" value="5"> ETH<br>
+
             <br>
-            <input type="text" id="distributorID" name="distributorID" value="0xf1b1bcd24dad92303dd9fe78be639f7bcf9c238d"
-                size="50">
-            <br>
-            Retailer ID
-            <br>
-            <input type="text" id="retailerID" name="retailerID" value="0x0fb2bfefd526966c87efa19f6693d50971763fc2"
-                size="50"><br>
-            Distributor ID
-            <br>
-            <input type="text" id="consumerID" name="consumerID" value="0x5d777e9127b28fb119e81a6304278a0a21bef1c4"
-                size="50"><br>
-            <br>
-            <button class="btn-buy" id="button" type="button" data-id="5">Buy</button>
-            <button class="btn-ship" id="button" type="button" data-id="6">Ship</button>
-            <button class="btn-receive" id="button" type="button" data-id="7">Receive</button>
-            <button class="btn-purchase" id="button" type="button" data-id="8">Purchase</button>
+            <button id="btn_send_offer" type="button" data-id="8">Send offer</button>
         </div>
-        <div class=form-break></div>
-        <hr>
+
+        <h2>Execute Flow Steps</h2>
+        <div class="form-group">
+            Feature Id
+            <br>
+            <input type="number" id="workflow_feature_id" name="workflow_feature_id" value="1"><br>
+
+            Accept offer and start of development <small>(Role "Customer" required)</small>
+            <br>
+            <button id="btn_start_development" type="button" data-id="9">Start Development</small></button>
+
+            <div><br></div>
+
+            Finished developing and start review <small>(Role "Developer" required)</small>
+            <br>
+            <button id="btn_start_review" type="button" data-id="10">Start Review</small></button>
+
+            <div><br></div>
+
+            Review OK and start testing <small>(Role "Reviewer" required)</small>
+            <br>
+            <button id="btn_start_test" type="button" data-id="11">Start Test</small></button>
+
+            <div><br></div>
+
+            Test OK now release/write invoice <small>(Role "Tester" required)</small>
+            <br>
+            <button id="btn_write_invoice" type="button" data-id="12">Write Invoice</small></button>
+
+            <div><br></div>
+
+            Send invoice to customer <small>(Role "Backoffice" required)</small>
+            <br>
+            <button id="btn_send_invoice" type="button" data-id="13">Send Invoice</small></button>
+
+            <div><br></div>
+
+            Pay invoice and finsh flow  <small>(Role "Customer" required)</small>
+            <br>
+            <input type="number" id="amount" name="amount" value="1" style="width: 40px"><button class="send-button row-button" id="btn_pay" type="button" data-id="14">Pay</small></button>
+
+        </div>
+
     </div>
 
     <h2>Transaction History<span id="ftc-history"></span></h2>
